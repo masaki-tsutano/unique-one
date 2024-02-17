@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="明日を創りあげるOnly One Creator集団">
+  <meta name="robots" content="noindex">
+  <title>UNIQUE ONE | 明日を創りあげるOnly One Creator集団</title>
+
+  <!-- Google Fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+
+  <!-- リセットcss読み込み -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body cz-shortcut-listen="true">
+   <!-- .header  -->
+   <header class="header js-header">
+       <h1 class="logo">
+           <a href="index.html">
+               <img src="./img/logo.png" alt="UNIQUE ONEロゴ" class="logo-img">
+               <div class="logo-text">
+                   <p class="logo-text-top">未来を<span class="en">Create</span></p>
+                   <p class="logo-text-bottom en">UNIQUE ONE</p>
+               </div>
+           </a>
+       </h1>
+       <div class="header-right">
+           <nav class="header-menu">
+               <ul id="header-menu-list">
+                   <li><a href="#about" class="header-link">会社案内</a></li>
+                   <li><a href="#message" class="header-link">社長メッセージ</a></li>
+                   <li><a href="#job" class="header-link">採用情報</a></li>
+               </ul>
+               <div class="header-link">
+                   <div class="mypage-btn">
+                       <section class="wrapper"><button class="modal__btn header-link-btn" data-micromodal-trigger="modal-1" role="button">MY PAGEはこちら</button></section>
+                       <div id="modal-1" aria-hidden="true">
+                           <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+                               <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                                   <button class="modal__btn__close" aria-label="Close modal" data-micromodal-close="">
+                                       <span class="modal__btn__line"></span>
+                                   </button>
+                                   <p class="login-title">MY PAGE-ログイン</p>
+                                   <div class="login-item">
+                                       <p class="login-item-title">メールアドレス</p>
+                                       <input type="text" id="emailInput-1" required="required" placeholder="例） example@example.com">
+                                   </div><!-- /.form-item -->
+                                   <div class="login-item second">
+                                       <p class="login-item-title">パスワード</p>
+                                       <input type="password" id="passwordInput-1" required="required">
+                                   </div><!-- /.form-item -->
+                                   <button id="js-signin-1" class="signin-btn" aria-label="Close modal" data-micromodal-close="" onclick="location.href='index.html'">サインイン</button>
+                                   <a href="entry.html" class="signup-link">お問合せはこちら</a>
+                               </div>
+                           </div>
+                       </div> 
+                   </div>
+                   <button class="entryform-btn header-link-btn" type="button"><a href="entry.html">お問合せはこちら</a></button>
+               </div>
+           </nav>
+       </div>
+       <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu" aria-expanded="false" aria-label="メニューを開閉する">
+           <span class="hamburger__line">
+           </span>
+       </button>
+       <div class="sp-global-menu" id="js-global-menu" aria-hidden="true">
+           <nav>
+               <ul>
+                   <div class="sp-global-menu-logo">
+                       <img src="./img/logo.png" alt="UNIQUE ONEロゴ">
+                   </div>
+                   <div class="sp-global-menu-list">
+                       <li><a href="#about" class="sp-menu-link">会社案内</a></li>
+                       <li><a href="#message" class="sp-menu-link">社長メッセージ</a></li>
+                       <li><a href="#job" class="sp-menu-link">採用情報</a></li>
+                       <div class="mypage-btn">
+                           <section class="wrapper">
+                               <button class="modal__btn header-link-btn sp-menu-link-btn" data-micromodal-trigger="modal-2" role="button">MY PAGEはこちら</button>
+                           </section>
+                           <div id="modal-2" aria-hidden="true">
+                               <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+                                   <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+                                       <button class="modal__btn__close" aria-label="Close modal" data-micromodal-close="">
+                                           <span class="modal__btn__line">
+                                           </span>
+                                       </button>
+                                       <p class="login-title">MY PAGE-ログイン</p>
+                                       <div class="login-item">
+                                           <p class="login-item-title">メールアドレス</p>
+                                           <input type="text" id="emailInput-2" required="required" placeholder="例） example@example.com">
+                                       </div>
+                                       <div class="login-item">
+                                           <p class="login-item-title">パスワード</p>
+                                           <input type="password" id="passwordInput-2" required="required">
+                                       </div>
+                                       <button id="js-signin-2" class="signin-btn" aria-label="Close modal" data-micromodal-close="" onclick="location.href='index.html'">サインイン</button>
+                                       <a href="entry.html" class="signup-link">お問合せはこちら</a>
+                                   </div>
+                               </div>
+                           </div> 
+                       </div><!-- /.mypage-btn -->
+                       <button class="entryform-btn header-link-btn sp-menu-link-btn" type="button"><a href="entry.html">お問合せはこちら</a></button>
+                   </div><!-- /.sp-global-menu-list -->
+               </ul>
+           </nav>
+       </div>
+   </header>
+   <!-- /.header  -->
+  
+  <main>
+      <!-- loading -->
+      <!-- <div id="loadingWrap" class="loadingNone">
+          <div id="loading"></div>
+      </div> -->
+      <!-- loading -->
+
+      <!-- #loading -->
+    <!-- <div id="loading">
+        <img src="./img/logo.png" alt="UNIQUE ONEロゴ">
+    </div> -->
+    <!-- /#loading -->
+
+      <!-- .fv -->
+      <div class="fv">
+          <div class="slide">
+              <div class="slide-image"><img src="./img/fv01.jpg" width="1123" height="709" decoding="async" alt=""></div>
+              <div class="slide-image"><img src="./img/fv02.jpeg" width="1123" height="709" decoding="async" alt=""></div>
+              <div class="slide-image"><img src="./img/fv03.jpg" width="1123" height="709" decoding="async" alt=""></div>
+          </div>
+          <div class="fv-bg"></div>
+          <div class="fv-copy">
+              <span>明日を<br class="break">創りあげる</span>
+              <span>Only One</span>
+              <span>Creator集団</span>
+          </div>
+      </div>
+      <!-- /.fv -->
+
+      <!-- #about -->
+      <div id="about">
+          <div class="sec-inner">
+            <span class="sec-subtitle en">About</span>
+            <h2 class="sec-title sec-title-about">
+                <p class="sec-title-bottom"><span>UNIQUE ONE</span>の<br>ミッション・ビジョン</p>
+            </h2>
+            <div class="about">
+                <span class="item-title en">Mission</span>
+                <p class="item-copy">タイトルタイトルタイトル、<br>
+                    タイトルタイトルタイトルタイトルタイトル</p>
+                <p class="item-text">
+                    親譲りの無鉄砲で小供の時から損ばかりしている。<br class="pc-br">
+                    小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな<br class="pc-br">
+                    無闇をしたと聞く人があるかも知れ
+                </p>
+            </div>
+            <div class="about item-right">
+                <span class="item-title en">Vision</span>
+                <p class="item-copy">タイトルタイトルタイトル<br>
+                    タイトルタイトルタイトルタイトルタイトル</p>
+                <p class="item-text">
+                    親譲りの無鉄砲で小供の時から損ばかりしている。<br class="pc-br">
+                    小学校に居る時分学校の二階から飛び<br class="pc-br">
+                    降りて一週間ほど腰を抜かした事がある。なぜ<br class="pc-br">
+                    そんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも<br class="pc-br">
+                    ない。新築の二階から首を出していたら、同
+                </p>
+            </div>
+          </div>
+          <div class="about_bg">
+              <img src="./img/about-bg.jpg" alt="">
+          </div>
+      </div>
+      <!-- /#about -->
+
+      <!-- #message -->
+      <div id="message">
+          <span class="sec-subtitle">Message</span>
+          <h2 class="sec-title sec-title-message">
+              <p class="sec-title-bottom">社長メッセージ</p>
+          </h2>
+          <div class="ceo-message">
+              <div class="message-content sec-inner">
+                  <p class="message-title">タイトルタイトル、<br class="mp-br">タイトルタイトルタイトル</p>
+                  <p class="message-text">
+                    親譲りの無鉄砲で小供の時から損ばかりしている。<br>
+                    小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな<br>
+                    無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、<br>
+                    同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。<br>
+                    小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、<br>
+                    この次は抜かさずに飛んで見せますと答えた。（青空文庫より）親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の<br>
+                    二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。<br>
+                    別段深い理由でもない。新築の二階から首を出していたら、同級生の一人
+                  </p>
+              </div>
+              <div class="ceo-name-pc">
+                  <p class="position-name">代表取締役社長</p>
+                  <p class="ceo-name">佐藤&nbsp;未來</p>
+              </div>
+              <div class="ceo-name-mp">
+                  <p class="position-name">代表取締役社長</p>
+                  <p class="ceo-name">佐藤&nbsp;未來</p>
+              </div>
+          </div>
+      </div>
+      <!-- /#message -->
+
+      <!-- #job -->
+      <div id="job">
+          <div class="sec-inner">
+              <span class="sec-subtitle">Job List</span>
+              <h2 class="sec-title sec-title-job">
+                  <p class="sec-title-bottom">募集要項</p>
+              </h2>
+              <p class="job-read">それぞれの職種の詳細は個別ページで解説しています。</p>
+              <div class="job-item-list">
+                  <div class="job-item">
+                      <a href="sales.html">
+                          <h3 class="job-item-title">営業担当</h3>
+                          <img src="./img/job01.jpg" alt="営業担当">
+                          <div class="job-item-text">
+                              <p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び</p>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="job-item">
+                      <a href="pr.html">
+                          <h3 class="job-item-title">広報担当</h3>
+                          <img src="./img/job02.jpg" alt="広報担当">
+                          <div class="job-item-text">
+                              <p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び</p>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="job-item">
+                      <a href="engineer.html">
+                          <h3 class="job-item-title">エンジニア担当</h3>
+                          <img src="./img/job03.jpg" alt="エンジニア担当">
+                          <div class="job-item-text">
+                              <p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び</p>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="job-item">
+                      <a href="clerical.html">
+                          <h3 class="job-item-title">事務職</h3>
+                          <img src="./img/job04.jpg" alt="事務職">
+                          <div class="job-item-text">
+                              <p>親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び</p>
+                          </div>
+                      </a>
+                  </div>
+              </div> 
+          </div>
+          <div class="job-bg"></div>
+      </div>
+      <!-- /#job -->
+
+      <!-- footer -->
+      <footer>
+          <div class="footer-bg">
+              <div class="footer-content">
+                  <img src="./img/footer-logo.png" alt="UNIQUE ONEフッターロゴ">
+                  <div class="footer-text">
+                      <p class="footer-text-top">親譲りの無鉄砲で小供の時<br>から損ばかりしている。小学校に</p>
+                      <p class="footer-text-bottom">
+                          親譲りの無鉄砲で小供の時<br class="mp-br">から損ばかりしている。小学校に居る時分学校<br>
+                          の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をした<br>
+                          と聞く人があるかも知れぬ。別段深い理由でもない。新築の
+                      </p>
+                  </div>
+                  <button class="entryform-btn footer-link-btn" type="button"><a href="entry.html">お問合せはこちら</a></button>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="logo">
+                  <a href="index.html">
+                  <img src="./img/logo.png" alt="UNIQUE ONEロゴ" class="logo-img">
+                  <div class="logo-text">
+                      <p class="logo-text-top">未来を<span class="en">Create</span></p>
+                      <p class="logo-text-bottom en">UNIQUE ONE</p>
+                  </div>
+                  </a>
+              </div>
+              <p class="copyright">&copy;UNIQUE ONE 2023 All Rights Reserved</p>
+          </div>
+      </footer>       
+      <!-- /footer -->
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
