@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="明日を創りあげるOnly One Creator集団">
+  <meta name="robots" content="noindex">
+  
+  <!-- Google Fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+
+  <!-- リセットcss読み込み -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <title>営業担当 | UNIQUE ONE募集要項</title>
+</head>
+<body>
+    <!-- .header -->
+    <header class="header header-lower">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="UNIQUE ONEロゴ" class="logo-img">
+                <div class="logo-text">
+                    <p class="logo-text-top">未来を<span class="en">Create</span></p>
+                    <p class="logo-text-bottom en">UNIQUE ONE</p>
+                </div>
+            </a>
+        </h1>
+        <div class="header-right">
+            <nav class="header-menu">
+                <ul id="header-menu-list">
+                    <li><a href="index.html#about" class="header-link">会社案内</a></li>
+                    <li><a href="index.html#message" class="header-link">社長メッセージ</a></li>
+                    <li><a href="index.html#job" class="header-link">採用情報</a></li>
+                </ul>
+                <div class="header-link">
+                    <div class="mypage-btn">
+                        <section class="wrapper"><button class="modal__btn header-link-btn" data-micromodal-trigger="modal-1" role="button">MY PAGEはこちら</button></section>
+                        <div id="modal-1" aria-hidden="true">
+                            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                                    <button class="modal__btn__close" aria-label="Close modal" data-micromodal-close>
+                                        <span class="modal__btn__line">
+                                        </span>
+                                    </button>
+                                    <p class="login-title">MY PAGE-ログイン</p>
+                                    <div class="login-item">
+                                        <p class="login-item-title">メールアドレス</p>
+                                        <input type="text" id="emailInput-1" required="required" placeholder="例） example@example.com">
+                                    </div><!-- /.form-item -->
+                                    <div class="login-item second">
+                                        <p class="login-item-title">パスワード</p>
+                                        <input type="password" id="passwordInput-1" required="required">
+                                    </div><!-- /.form-item -->
+                                    <button id="js-signin-1" class="signin-btn" aria-label="Close modal" data-micromodal-close onclick="location.href='index.html'">サインイン</button>
+                                    <a href="entry.html" class="signup-link">お問合せはこちら</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <button class="entryform-btn header-link-btn" type="button"><a href="entry.html">お問合せはこちら</a></button>
+                </div>
+            </nav>
+        </div>
+        <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu" aria-expanded="false" aria-label="メニューを開閉する">
+            <span class="hamburger__line">
+            </span>
+        </button>
+        <div class="sp-global-menu" id="js-global-menu" aria-hidden="true">
+            <nav>
+                <ul>
+                    <div class="sp-global-menu-logo">
+                        <img src="./img/logo.png" alt="UNIQUE ONEロゴ">
+                    </div>
+                    <div class="sp-global-menu-list">
+                        <li><a href="index.html#about" class="sp-menu-link">会社案内</a></li>
+                        <li><a href="index.html#message" class="sp-menu-link">社長メッセージ</a></li>
+                        <li><a href="index.html#job" class="sp-menu-link">採用情報</a></li>
+                        <div class="mypage-btn">
+                            <section class="wrapper">
+                                <button class="modal__btn header-link-btn sp-menu-link-btn" data-micromodal-trigger="modal-2" role="button">MY PAGEはこちら</button>
+                            </section>
+                            <div id="modal-2" aria-hidden="true">
+                                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                                    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+                                        <button class="modal__btn__close" aria-label="Close modal" data-micromodal-close>
+                                            <span class="modal__btn__line">
+                                            </span><!-- /.modal__btn-line -->
+                                        </button>
+                                        <p class="login-title">MY PAGE-ログイン</p>
+                                        <div class="login-item">
+                                            <p class="login-item-title">メールアドレス</p>
+                                            <input type="text" id="emailInput-2" required="required" placeholder="例） example@example.com">
+                                        </div><!-- /.form-item -->
+                                        <div class="login-item">
+                                            <p class="login-item-title">パスワード</p>
+                                            <input type="password" id="passwordInput-2" required="required">
+                                        </div><!-- /.form-item -->
+                                        <button id="js-signin-2" class="signin-btn" aria-label="Close modal" data-micromodal-close onclick="location.href='index.html'">サインイン</button>
+                                        <a href="entry.html" class="signup-link">お問合せはこちら</a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <button class="entryform-btn header-link-btn sp-menu-link-btn" type="button"><a href="entry.html">お問合せはこちら</a></button>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /.header -->
+    
+    <!-- main -->
+    <main>
+        <div class="course-fv">
+            <div class="course-fv-relative">
+                <div class="sec-inner-lower">
+                    <div class="course-fv-img sales"></div>
+                    <p class="course-title">営業担当</p>
+                </div>
+                <div class="course-fv-img-bg"></div>
+            </div>
+            <div class="course-fv-bg">
+                <p class="course-text">
+                    親譲りの無鉄砲で小供の時から損ばかりしている。<br class="pc-br">
+                    小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇を<br class="pc-br">
+                    したと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同
+                </p>
+            </div>
+        </div>
+
+        <div id="course-description">
+            <h2 class="course-description-title">募集要項</h2>
+            <div class="table-wrapper">
+                <table class="course-description-list sec-inner-lower">
+                    <tr>
+                        <th class="course-description-list-title">タイトル</th>
+                        <td class="course-description-list-date">
+                            ・親譲りの無鉄砲で小供の時<br>
+                            ・から損ばかりしている。小学校に居る時分学校<br>
+                            ・の二階から飛び降りて一週間ほど<br>
+                            ・腰を抜かした事がある。な<br>
+                            ・ぜそんな無闇をし<br>
+                            ・たと聞く人があるかも知れぬ。別段<br>
+                            ・深い理由でもない<br>
+                            ・新築の二階から
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="course-description-list-title">タイトル</th>
+                        <td class="course-description-list-date">
+                            <span class="bold">テキスト</span><br>
+                            ・親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時<br>
+                            <span class="bold">テキスト</span><br>
+                            ・親譲りの無鉄砲で<br>
+                            ・小供の時から損ばかりして<br>
+                            ・いる。小学校に居る時
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="course-description-list-title">タイトル</th>
+                        <td class="course-description-list-date">
+                            ・親譲りの<br>
+                            ・無鉄砲で<br>
+                            ・小供の時から損ば<br>
+                            ・かりして
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="course-description-list-title">タイトル・タイトル</th>
+                        <td class="course-description-list-date">
+                            【タイトル・タイトル】<br>
+                            ・小供の時から損ばかりしている。小学校に居<br>
+                            ・る時分学校の二階から飛び<br>
+                            ・降りて一週間ほど腰を抜かした事がある。<br>
+                            【タイトルタイトル】<br>
+                            ・たと聞く人がある<br>
+                            ・かも知れぬ。別段深い理由<br>
+                            ・でもない。新築の二階から
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="course-description-list-title">タイトルタイトル</th>
+                        <td class="course-description-list-date">
+                            ・親譲りの無鉄砲で<br>
+                            ・小供の時から損ばかりしている。
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="course-description-list-title">タイトルタイトル</th>
+                        <td class="course-description-list-date">
+                            ・親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居<br>
+                            ・る時分学校の二階から飛び降りて一週間ほど腰を抜かした事が<br>
+                            ・ある。なぜそんな無闇をしたと聞く人があるかも知れ<br>
+                            ・ぬ。別段深い理由でもない。新築の二階から首を出していたら
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="course-description-list-title">タイトルタイトル</th>
+                        <td class="course-description-list-date">
+                            ・親譲りの無鉄砲で小供の時<br>
+                            ・から損ばかりしている。小学校に居<br>
+                            ・る時分学校の二階から飛び降りて一<br>
+                            ・週間ほど腰を抜かした事が<br>
+                            ・ある。なぜそんな無闇をしたと
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="course-description-list-title">タイトルタイトル</th>
+                        <td class="course-description-list-date">
+                            ・親譲りの無鉄砲で小供の時<br>
+                            ・から損ばかりしている。小<br>
+                            ・学校に居る時分学校の二階から飛び<br>
+                            ・降りて一週間ほど腰を抜か<br>
+                            ・した事がある。なぜそんな
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="course-description-list-title">タイトル</th>
+                        <td class="course-description-list-date">
+                            親譲りの無鉄砲で
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="course-description-list-title">タイトル</th>
+                        <td class="course-description-list-date">
+                            ・親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分<br>
+                            ・学校の二階から飛び降りて一週間ほど腰を抜かした事がある。<br>
+                            ・なぜそんな無闇をしたと聞く人があるかも知れぬ。<br>
+                            ・別段深い理由でもない。新築の二階から首を出していたら<br>
+                            ・同級生の一人が冗談に、いくら威張っても、そこから飛び降りる<br>
+                            ・事は出来まい。弱虫やーい。と囃したからである。小使に<br>
+                            ・負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて<br>
+                            ・腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せます
+                        </td>
+                    </tr>
+                </table>
+            </div> 
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-bg">
+                <div class="footer-content">
+                    <img src="./img/footer-logo.png" alt="フッターロゴ">
+                    <div class="footer-text">
+                        <p class="footer-text-top">親譲りの無鉄砲で小供の時<br>から損ばかりしている。小学校に</p>
+                        <p class="footer-text-bottom">
+                            親譲りの無鉄砲で小供の時<br class="mp-br">から損ばかりしている。小学校に居る時分学校<br>
+                            の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をした<br>
+                            と聞く人があるかも知れぬ。別段深い理由でもない。新築の
+                        </p>
+                    </div>
+                    <button class="entryform-btn footer-link-btn" type="button"><a href="entry.html">お問合せはこちら</a></button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="./img/logo.png" alt="igattaヘッダーロゴ" class="logo-img">
+                    <div class="logo-text">
+                        <p class="logo-text-top">未来を<span class="en">Create</span></p>
+                        <p class="logo-text-bottom en">UNIQUE ONE</p>
+                    </div>
+                    </a>
+                </div>
+                <p class="copyright">&copy;UNIQUE ONE 2023 All Rights Reserved</p>
+            </div>
+        </footer>     
+        <!-- /footer -->
+    </main>
+    <!-- /main -->
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
