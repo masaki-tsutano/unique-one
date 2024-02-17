@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="トラベルマスターアカデミーは、旅行、ホスピタリティ、ブライダル、航空業界での専門的なスキルと知識を磨くための場所です。キャリアを築く第一歩を踏み出しましょう。未来の旅行とホスピタリティのプロフェッショナルになるための一歩を踏み出す場所、それがトラベルマスターアカデミーです。">
+  <meta name="robots" content="noindex">
+
+  <title>お問合せフォーム | トラベルマスターアカデミー</title>
+  
+  <!-- Google Fonts link -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Raleway:wght@400&display=swap" rel="stylesheet">
+  
+  <!-- ファビコン -->
+  <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+
+  <!-- リセットcss読み込み -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+  <!-- .header -->
+  <header class="header js-header">
+    <h1 class="logo">
+        <a href="index.html">
+            <img src="./img/logo.png" alt="UNIQUE ONEロゴ" class="logo-img">
+            <div class="logo-text">
+                <p class="logo-text-top">未来を<span class="en">Create</span></p>
+                <p class="logo-text-bottom en">UNIQUE ONE</p>
+            </div>
+        </a>
+    </h1>
+    <div class="header-right">
+        <nav class="header-menu">
+            <ul id="header-menu-list">
+                <li><a href="index.html#about" class="header-link">会社案内</a></li>
+                <li><a href="index.html#message" class="header-link">社長メッセージ</a></li>
+                <li><a href="index.html#job" class="header-link">採用情報</a></li>
+            </ul>
+            <div class="header-link">
+                <div class="mypage-btn">
+                    <section class="wrapper"><button class="modal__btn header-link-btn" data-micromodal-trigger="modal-1" role="button">MY PAGEはこちら</button></section>
+                    <div id="modal-1" aria-hidden="true">
+                        <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+                            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                                <button class="modal__btn__close" aria-label="Close modal" data-micromodal-close="">
+                                    <span class="modal__btn__line">
+                                    </span>
+                                </button>
+                                <p class="login-title">MY PAGE-ログイン</p>
+                                <div class="login-item">
+                                    <p class="login-item-title">メールアドレス</p>
+                                    <input type="text" id="emailInput-1" required="required" placeholder="例） example@example.com">
+                                </div>
+                                <div class="login-item second">
+                                    <p class="login-item-title">パスワード</p>
+                                    <input type="password" id="passwordInput-1" required="required">
+                                </div>
+                                <button id="js-signin-1" class="signin-btn" aria-label="Close modal" data-micromodal-close="" onclick="location.href='index.html'">サインイン</button>
+                                <a href="entry.html" class="signup-link">お問合せはこちら</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <button class="entryform-btn header-link-btn" type="button"><a href="entry.html">お問合せはこちら</a></button>
+            </div>
+        </nav>
+    </div>
+    <button type="button" id="js-hamburger" class="button hamburger" aria-controls="js-glabal-menu" aria-expanded="false" aria-label="メニューを開閉する">
+        <span class="hamburger__line">
+        </span>
+    </button>
+    <div class="sp-global-menu" id="js-global-menu" aria-hidden="true">
+        <nav>
+            <ul>
+                <div class="sp-global-menu-logo">
+                    <img src="./img/logo.png" alt="UNIQUE ONEロゴ">
+                </div>
+                <div class="sp-global-menu-list">
+                    <li><a href="index.html#about" class="sp-menu-link">会社案内</a></li>
+                    <li><a href="index.html#message" class="sp-menu-link">社長メッセージ</a></li>
+                    <li><a href="index.html#job" class="sp-menu-link">採用情報</a></li>
+                    <div class="mypage-btn">
+                        <section class="wrapper">
+                            <button class="modal__btn header-link-btn sp-menu-link-btn" data-micromodal-trigger="modal-2" role="button">MY PAGEはこちら</button>
+                        </section>
+                        <div id="modal-2" aria-hidden="true">
+                            <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+                                <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title">
+                                    <button class="modal__btn__close" aria-label="Close modal" data-micromodal-close="">
+                                        <span class="modal__btn__line">
+                                        </span>
+                                    </button>
+                                    <p class="login-title">MY PAGE-ログイン</p>
+                                    <div class="login-item">
+                                        <p class="login-item-title">メールアドレス</p>
+                                        <input type="text" id="emailInput-2" required="required" placeholder="例） example@example.com">
+                                    </div><!-- /.form-item -->
+                                    <div class="login-item">
+                                        <p class="login-item-title">パスワード</p>
+                                        <input type="password" id="passwordInput-2" required="required">
+                                    </div><!-- /.form-item -->
+                                    <button id="js-signin-2" class="signin-btn" aria-label="Close modal" data-micromodal-close="" onclick="location.href='index.html'">サインイン</button>
+                                    <a href="entry.html" class="signup-link">お問合せはこちら</a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <button class="entryform-btn header-link-btn sp-menu-link-btn" type="button"><a href="entry.html">お問合せはこちら</a></button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <!-- /.header -->
+
+  <!-- main -->
+  <main>
+    <!-- .form -->
+    <div class="form">
+      <div class="form-inner">
+        <div class="entryform-wrapper">
+            <form class="entryform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSLfJH1QqB15DQfCSJGMj1Fuv05gT63hI3NkOnWMgeo5aRDA/formResponse" target="_self" method="POST" id="form">
+                <div class="entryfomr-content">
+                    <h2 class="entryform-title">求人募集<br class="mp-br"><span class="entryform-title-color">お問合せフォーム</span></h2><!-- /.entryform-title -->
+                    <p class="thanks-message">お問合せありがとうございます。</p><!-- /.thanks-message -->
+                    <p class="entryform-text thanks">お問い合わせ内容について、当社の担当者が迅速に対応いたします。<br class="pc-br">通常、数営業日以内にご回答を差し上げます。<br class="pc-br"></p><!-- /.entryform-text -->   
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <!-- /.form -->
+      
+    <!-- footer -->
+    <footer>
+        <div class="footer-bottom">
+            <div class="logo">
+                <a href="index.html">
+                <img src="./img/logo.png" alt="igattaヘッダーロゴ" class="logo-img">
+                <div class="logo-text">
+                    <p class="logo-text-top">未来を<span class="en">Create</span></p>
+                    <p class="logo-text-bottom en">UNIQUE ONE</p>
+                </div>
+                </a>
+            </div>
+            <p class="copyright">&copy;UNIQUE ONE 2023 All Rights Reserved</p>
+        </div>
+    </footer>     
+    <!-- /footer -->
+  </main>
+  <!-- /main -->
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
